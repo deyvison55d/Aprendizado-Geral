@@ -1,0 +1,9 @@
+class Livro():
+    def __init__(self, autor, título, num_paginas, genero):
+        self.autor = autor
+        self.título = título
+        self.num_paginas = num_paginas
+        self.genero = genero
+    
+
+meulivro = Livro()
