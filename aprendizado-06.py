@@ -10,21 +10,21 @@ class Pet:
     
     def AlimentarPet(self, comida):
         self.peso += comida
-    
+        
 #---------------------------------------------
 
 class Abrigo:
     def __init__(self):
-        self.catalogo = []
+        self._catalogo = []
 
     def AdicionarPet(self, pet):
-        self.catalogo.append(pet)
+        self._catalogo.append(pet)
     
     def ImprimirAbrigo(self):
         print('Pets no abrigo:')
         print('-'*20)
 
-        for pet in self.catalogo:
+        for pet in self._catalogo:
             pet.ImprimirPet()
             print('-'*20)
 
