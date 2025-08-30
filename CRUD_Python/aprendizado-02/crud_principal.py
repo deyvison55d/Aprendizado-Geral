@@ -135,3 +135,4 @@ O que deseja atualizar?
                 continue
             break
         self.cursor.execute("DELETE FROM pessoas WHERE id = %s", (id,))
+        self.conexao.commit()
