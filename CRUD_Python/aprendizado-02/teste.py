@@ -11,13 +11,19 @@ try:
     
     if conexao.is_connected:
         print('Conectado com sucesso!')
-#----------------------------------------------------
         cursor = conexao.cursor()
+
+#----------------------------------------------------
+# COMANDOS ABAIXO
+
         crud = Crud(conexao = conexao, cursor = cursor)
-        
+        crud.atualizar(2)
 
 
 
+
+# COMANDOS ACIMA
+#----------------------------------------------------
 except Error as e:
     print(f'Erro ao conectar: {e}')
 finally:
